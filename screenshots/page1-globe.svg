@@ -1,0 +1,359 @@
+<svg viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" font-family="'Courier New',Courier,monospace">
+  <defs>
+    <radialGradient id="globeGrad" cx="44%" cy="42%" r="52%">
+      <stop offset="0%" stop-color="#0e2a6e"/>
+      <stop offset="60%" stop-color="#051840"/>
+      <stop offset="100%" stop-color="#010c1e"/>
+    </radialGradient>
+    <radialGradient id="atmoGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="70%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="#0a2a5e" stop-opacity="0.35"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="arcglow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="globeClip">
+      <circle cx="590" cy="370" r="218"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="720" fill="#000812"/>
+
+  <!-- Scanlines -->
+  <rect width="1200" height="720" fill="url(#scanlines)" opacity="0.03"/>
+
+  <!-- ── NAV BAR ── -->
+  <rect width="1200" height="46" fill="#1f3269"/>
+  <rect y="46" width="1200" height="1" fill="#377dd4" opacity="0.42"/>
+  <!-- Brand -->
+  <text x="14" y="28" fill="#4db8d8" font-size="10" letter-spacing="3" font-weight="bold">◎ OSINT ELECTION MONITOR</text>
+  <!-- Separator -->
+  <rect x="218" y="13" width="1" height="20" fill="#3c9bd7" opacity="0.35"/>
+  <!-- Tabs -->
+  <rect x="228" y="10" width="108" height="26" rx="2" fill="rgba(0,28,65,0.65)" stroke="#377dd4" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="282" y="27" fill="#4db8d8" font-size="8.5" letter-spacing="1" text-anchor="middle">GLOBE MONITOR</text>
+  <rect x="346" y="10" width="136" height="26" rx="2" fill="transparent" stroke="transparent"/>
+  <text x="414" y="27" fill="rgba(165,220,242,0.55)" font-size="8.5" letter-spacing="1" text-anchor="middle">API REFERENCE — 50</text>
+  <rect x="492" y="10" width="158" height="26" rx="2" fill="transparent"/>
+  <text x="571" y="27" fill="rgba(165,220,242,0.55)" font-size="8.5" letter-spacing="1" text-anchor="middle">PREPAREDNESS SURVEY</text>
+  <text x="1186" y="28" fill="rgba(145,205,232,0.5)" font-size="7.5" letter-spacing="1.5" text-anchor="end">Tallinn Framework · Simulated · v3.0</text>
+
+  <!-- ── HEADER PANEL ── -->
+  <rect x="10" y="56" width="1180" height="44" rx="3" fill="#010c1e" fill-opacity="0.9" stroke="#377dd4" stroke-width="1" stroke-opacity="0.42"/>
+  <!-- Brand icon -->
+  <circle cx="36" cy="78" r="11" fill="none" stroke="#3daacf" stroke-width="1.5"/>
+  <text x="36" y="82" fill="#3daacf" font-size="9" text-anchor="middle">◎</text>
+  <!-- Title text -->
+  <text x="56" y="73" fill="#4db8d8" font-size="10" letter-spacing="3.5" font-weight="bold">OSINT GLOBAL SIGNAL MONITOR</text>
+  <text x="56" y="86" fill="rgba(185,235,252,0.75)" font-size="7.5" letter-spacing="1.5">Foreign Electoral Interference · Tallinn Framework · Simulated Real-time Feed</text>
+  <!-- Stats -->
+  <rect x="1030" y="62" width="48" height="32" rx="2" fill="rgba(0,22,55,0.7)" stroke="#377dd4" stroke-width="1" stroke-opacity="0.32"/>
+  <text x="1054" y="76" fill="#5DCAA5" font-size="16" font-weight="bold" text-anchor="middle">7</text>
+  <text x="1054" y="88" fill="rgba(185,235,252,0.85)" font-size="7" letter-spacing="1.5" text-anchor="middle">ACTIVE</text>
+  <rect x="1086" y="62" width="48" height="32" rx="2" fill="rgba(0,22,55,0.7)" stroke="#377dd4" stroke-width="1" stroke-opacity="0.32"/>
+  <text x="1110" y="76" fill="#7ec8e3" font-size="16" font-weight="bold" text-anchor="middle">43</text>
+  <text x="1110" y="88" fill="rgba(185,235,252,0.85)" font-size="7" letter-spacing="1.5" text-anchor="middle">TOTAL</text>
+  <rect x="1142" y="62" width="48" height="32" rx="2" fill="rgba(0,22,55,0.7)" stroke="#377dd4" stroke-width="1" stroke-opacity="0.32"/>
+  <text x="1166" y="76" fill="#EF9F27" font-size="14" font-weight="bold" text-anchor="middle">MED</text>
+  <text x="1166" y="88" fill="rgba(185,235,252,0.85)" font-size="7" letter-spacing="1.5" text-anchor="middle">THREAT</text>
+
+  <!-- ── LEGEND PANEL ── -->
+  <rect x="10" y="108" width="162" height="310" rx="3" fill="#010c1e" fill-opacity="0.9" stroke="#377dd4" stroke-width="1" stroke-opacity="0.42"/>
+  <text x="20" y="123" fill="rgba(165,225,252,0.8)" font-size="7" letter-spacing="2">COLLECTION</text>
+  <circle cx="24" cy="133" r="3.5" fill="#1D9E75"/>
+  <text x="30" y="137" fill="rgba(165,225,252,0.5)" font-size="7.5">S1</text>
+  <text x="46" y="137" fill="rgba(215,245,255,0.96)" font-size="7.5">Social media monitoring</text>
+  <circle cx="24" cy="147" r="3.5" fill="#5DCAA5"/>
+  <text x="30" y="151" fill="rgba(165,225,252,0.5)" font-size="7.5">S2</text>
+  <text x="46" y="151" fill="rgba(215,245,255,0.96)" font-size="7.5">Disinformation tracking</text>
+  <text x="20" y="166" fill="rgba(165,225,252,0.8)" font-size="7" letter-spacing="2">ANALYSIS</text>
+  <circle cx="24" cy="176" r="3.5" fill="#378ADD"/>
+  <text x="30" y="180" fill="rgba(165,225,252,0.5)" font-size="7.5">S3</text>
+  <text x="46" y="180" fill="rgba(215,245,255,0.96)" font-size="7.5">Infrastructure intel</text>
+  <circle cx="24" cy="190" r="3.5" fill="#85B7EB"/>
+  <text x="30" y="194" fill="rgba(165,225,252,0.5)" font-size="7.5">S4</text>
+  <text x="46" y="194" fill="rgba(215,245,255,0.96)" font-size="7.5">Financial flow tracking</text>
+  <text x="20" y="209" fill="rgba(165,225,252,0.8)" font-size="7" letter-spacing="2">ATTRIBUTION</text>
+  <circle cx="24" cy="219" r="3.5" fill="#7F77DD"/>
+  <text x="30" y="223" fill="rgba(165,225,252,0.5)" font-size="7.5">S5</text>
+  <text x="46" y="223" fill="rgba(215,245,255,0.96)" font-size="7.5">Actor attribution</text>
+  <circle cx="24" cy="233" r="3.5" fill="#AFA9EC"/>
+  <text x="30" y="237" fill="rgba(165,225,252,0.5)" font-size="7.5">S6</text>
+  <text x="46" y="237" fill="rgba(215,245,255,0.96)" font-size="7.5">Visual verification</text>
+  <text x="20" y="252" fill="rgba(165,225,252,0.8)" font-size="7" letter-spacing="2">COUNTER</text>
+  <circle cx="24" cy="262" r="3.5" fill="#D85A30"/>
+  <text x="30" y="266" fill="rgba(165,225,252,0.5)" font-size="7.5">S7</text>
+  <text x="46" y="266" fill="rgba(215,245,255,0.96)" font-size="7.5">Narrative pre-bunking</text>
+  <circle cx="24" cy="276" r="3.5" fill="#F09975"/>
+  <text x="30" y="280" fill="rgba(165,225,252,0.5)" font-size="7.5">S8</text>
+  <text x="46" y="280" fill="rgba(215,245,255,0.96)" font-size="7.5">Resilience monitoring</text>
+  <text x="20" y="298" fill="rgba(165,225,252,0.8)" font-size="7" letter-spacing="2">ACTORS</text>
+  <circle cx="24" cy="308" r="3.5" fill="#D85A30"/>
+  <text x="34" y="312" fill="rgba(215,245,255,0.96)" font-size="7.5">Source (foreign state)</text>
+  <circle cx="24" cy="322" r="3.5" fill="#1D9E75"/>
+  <text x="34" y="326" fill="rgba(215,245,255,0.96)" font-size="7.5">Target (democracy)</text>
+
+  <!-- ── GLOBE ── -->
+  <!-- Stars -->
+  <circle cx="220" cy="100" r="0.8" fill="#6a7f91" opacity="0.7"/>
+  <circle cx="340" cy="140" r="0.6" fill="#6a7f91" opacity="0.6"/>
+  <circle cx="460" cy="90" r="0.9" fill="#6a7f91" opacity="0.8"/>
+  <circle cx="820" cy="110" r="0.7" fill="#6a7f91" opacity="0.7"/>
+  <circle cx="940" cy="85" r="0.8" fill="#6a7f91" opacity="0.6"/>
+  <circle cx="1050" cy="150" r="0.6" fill="#6a7f91" opacity="0.7"/>
+  <circle cx="250" cy="450" r="0.7" fill="#6a7f91" opacity="0.6"/>
+  <circle cx="950" cy="480" r="0.8" fill="#6a7f91" opacity="0.7"/>
+  <circle cx="400" cy="520" r="0.6" fill="#6a7f91" opacity="0.5"/>
+  <circle cx="850" cy="530" r="0.9" fill="#6a7f91" opacity="0.6"/>
+
+  <!-- Globe atmosphere glow -->
+  <circle cx="590" cy="370" r="232" fill="none" stroke="#0a2a5e" stroke-width="14" opacity="0.32"/>
+  <circle cx="590" cy="370" r="238" fill="none" stroke="#051640" stroke-width="8" opacity="0.18"/>
+
+  <!-- Globe base -->
+  <circle cx="590" cy="370" r="218" fill="url(#globeGrad)"/>
+
+  <!-- Land dots approximation (clipped to globe) -->
+  <g clip-path="url(#globeClip)" opacity="0.85">
+    <!-- North America -->
+    <g fill="#1a4d92">
+      <circle cx="440" cy="200" r="2.2"/><circle cx="455" cy="195" r="2.2"/><circle cx="470" cy="190" r="2.2"/>
+      <circle cx="485" cy="188" r="2.2"/><circle cx="500" cy="192" r="2.2"/><circle cx="515" cy="197" r="2.2"/>
+      <circle cx="430" cy="215" r="2.2"/><circle cx="445" cy="212" r="2.2"/><circle cx="460" cy="210" r="2.2"/>
+      <circle cx="475" cy="207" r="2.2"/><circle cx="490" cy="205" r="2.2"/><circle cx="505" cy="208" r="2.2"/>
+      <circle cx="435" cy="230" r="2.2"/><circle cx="450" cy="228" r="2.2"/><circle cx="465" cy="225" r="2.2"/>
+      <circle cx="480" cy="222" r="2.2"/><circle cx="495" cy="220" r="2.2"/><circle cx="510" cy="223" r="2.2"/>
+      <circle cx="440" cy="245" r="2.2"/><circle cx="455" cy="242" r="2.2"/><circle cx="470" cy="240" r="2.2"/>
+      <circle cx="485" cy="237" r="2.2"/><circle cx="500" cy="240" r="2.2"/>
+      <circle cx="445" cy="258" r="2.2"/><circle cx="460" cy="256" r="2.2"/><circle cx="475" cy="254" r="2.2"/>
+    </g>
+    <!-- Europe -->
+    <g fill="#1a4d92">
+      <circle cx="600" cy="185" r="2.2"/><circle cx="614" cy="182" r="2.2"/><circle cx="628" cy="180" r="2.2"/>
+      <circle cx="605" cy="197" r="2.2"/><circle cx="618" cy="195" r="2.2"/><circle cx="631" cy="193" r="2.2"/>
+      <circle cx="608" cy="210" r="2.2"/><circle cx="621" cy="208" r="2.2"/><circle cx="634" cy="207" r="2.2"/>
+      <circle cx="612" cy="222" r="2.2"/><circle cx="624" cy="220" r="2.2"/>
+    </g>
+    <!-- Russia/Asia -->
+    <g fill="#1a4d92">
+      <circle cx="650" cy="178" r="2.2"/><circle cx="665" cy="174" r="2.2"/><circle cx="680" cy="172" r="2.2"/>
+      <circle cx="695" cy="170" r="2.2"/><circle cx="710" cy="168" r="2.2"/><circle cx="725" cy="170" r="2.2"/>
+      <circle cx="655" cy="190" r="2.2"/><circle cx="670" cy="187" r="2.2"/><circle cx="685" cy="184" r="2.2"/>
+      <circle cx="700" cy="182" r="2.2"/><circle cx="715" cy="180" r="2.2"/><circle cx="730" cy="178" r="2.2"/>
+      <circle cx="660" cy="202" r="2.2"/><circle cx="675" cy="200" r="2.2"/><circle cx="690" cy="197" r="2.2"/>
+      <circle cx="705" cy="195" r="2.2"/><circle cx="720" cy="193" r="2.2"/>
+      <circle cx="665" cy="215" r="2.2"/><circle cx="680" cy="212" r="2.2"/><circle cx="695" cy="210" r="2.2"/>
+      <circle cx="710" cy="208" r="2.2"/><circle cx="725" cy="210" r="2.2"/>
+      <!-- China/East Asia -->
+      <circle cx="720" cy="225" r="2.2"/><circle cx="735" cy="222" r="2.2"/><circle cx="748" cy="220" r="2.2"/>
+      <circle cx="725" cy="237" r="2.2"/><circle cx="738" cy="235" r="2.2"/><circle cx="750" cy="233" r="2.2"/>
+    </g>
+    <!-- Africa -->
+    <g fill="#1a4d92">
+      <circle cx="615" cy="280" r="2.2"/><circle cx="628" cy="278" r="2.2"/><circle cx="641" cy="277" r="2.2"/>
+      <circle cx="618" cy="293" r="2.2"/><circle cx="631" cy="291" r="2.2"/><circle cx="644" cy="290" r="2.2"/>
+      <circle cx="620" cy="306" r="2.2"/><circle cx="633" cy="304" r="2.2"/><circle cx="646" cy="303" r="2.2"/>
+      <circle cx="622" cy="319" r="2.2"/><circle cx="635" cy="317" r="2.2"/><circle cx="632" cy="332" r="2.2"/>
+    </g>
+    <!-- South America -->
+    <g fill="#1a4d92">
+      <circle cx="480" cy="310" r="2.2"/><circle cx="493" cy="308" r="2.2"/><circle cx="506" cy="307" r="2.2"/>
+      <circle cx="483" cy="323" r="2.2"/><circle cx="496" cy="321" r="2.2"/><circle cx="509" cy="320" r="2.2"/>
+      <circle cx="485" cy="336" r="2.2"/><circle cx="498" cy="334" r="2.2"/><circle cx="511" cy="333" r="2.2"/>
+      <circle cx="488" cy="349" r="2.2"/><circle cx="501" cy="347" r="2.2"/>
+      <circle cx="490" cy="362" r="2.2"/><circle cx="503" cy="360" r="2.2"/>
+      <circle cx="492" cy="375" r="2.2"/><circle cx="494" cy="388" r="2.2"/>
+    </g>
+    <!-- Australia -->
+    <g fill="#1a4d92">
+      <circle cx="735" cy="370" r="2.2"/><circle cx="748" cy="368" r="2.2"/><circle cx="761" cy="367" r="2.2"/>
+      <circle cx="738" cy="383" r="2.2"/><circle cx="751" cy="381" r="2.2"/><circle cx="764" cy="380" r="2.2"/>
+      <circle cx="740" cy="396" r="2.2"/><circle cx="753" cy="394" r="2.2"/>
+    </g>
+    <!-- Middle East / India -->
+    <g fill="#1a4d92">
+      <circle cx="658" cy="238" r="2.2"/><circle cx="671" cy="236" r="2.2"/><circle cx="684" cy="235" r="2.2"/>
+      <circle cx="662" cy="251" r="2.2"/><circle cx="675" cy="249" r="2.2"/>
+      <circle cx="695" cy="262" r="2.2"/><circle cx="707" cy="260" r="2.2"/>
+      <circle cx="698" cy="275" r="2.2"/><circle cx="710" cy="273" r="2.2"/>
+    </g>
+  </g>
+
+  <!-- Equator line -->
+  <ellipse cx="590" cy="370" rx="218" ry="20" fill="none" stroke="#0d3a5e" stroke-width="0.8" opacity="0.45"/>
+  <!-- Meridian lines -->
+  <line x1="590" y1="152" x2="590" y2="588" stroke="#082240" stroke-width="0.6" opacity="0.35"/>
+
+  <!-- Globe overlay for 3D depth -->
+  <circle cx="590" cy="370" r="218" fill="url(#atmoGrad)"/>
+
+  <!-- ── SIGNAL ARCS ── -->
+  <!-- Russia -> Ukraine (blue/analysis) -->
+  <path d="M 683 195 Q 660 145 632 208" fill="none" stroke="#378ADD" stroke-width="2" opacity="0.88" filter="url(#arcglow)"/>
+  <circle cx="632" cy="208" r="4" fill="#378ADD" opacity="0.9"/>
+  <!-- China -> Taiwan (purple/attribution) -->
+  <path d="M 735 228 Q 760 200 758 235" fill="none" stroke="#7F77DD" stroke-width="2" opacity="0.88" filter="url(#arcglow)"/>
+  <circle cx="758" cy="235" r="4" fill="#7F77DD" opacity="0.9"/>
+  <!-- Russia -> USA (teal/collection) -->
+  <path d="M 685 192 Q 610 120 490 240" fill="none" stroke="#5DCAA5" stroke-width="1.8" opacity="0.75" filter="url(#arcglow)"/>
+  <circle cx="490" cy="240" r="3.5" fill="#5DCAA5" opacity="0.85"/>
+  <!-- Iran -> Germany (coral/counter) -->
+  <path d="M 672 248 Q 640 185 625 207" fill="none" stroke="#D85A30" stroke-width="1.8" opacity="0.82" filter="url(#arcglow)"/>
+  <circle cx="625" cy="207" r="3.5" fill="#D85A30" opacity="0.9"/>
+  <!-- China -> Australia (light blue) -->
+  <path d="M 738 230 Q 760 310 752 380" fill="none" stroke="#85B7EB" stroke-width="1.6" opacity="0.7" filter="url(#arcglow)"/>
+  <!-- Belarus -> Estonia (short arc) -->
+  <path d="M 638 192 Q 628 178 620 185" fill="none" stroke="#AFA9EC" stroke-width="1.5" opacity="0.78" filter="url(#arcglow)"/>
+
+  <!-- ── COUNTRY MARKERS ── -->
+  <!-- Source states (coral) -->
+  <!-- Russia -->
+  <circle cx="685" cy="192" r="5" fill="#D85A30"/><circle cx="685" cy="192" r="9" fill="none" stroke="#D85A30" stroke-width="1.2" opacity="0.55"/>
+  <!-- China -->
+  <circle cx="735" cy="228" r="5" fill="#D85A30"/><circle cx="735" cy="228" r="9" fill="none" stroke="#D85A30" stroke-width="1.2" opacity="0.55"/>
+  <!-- Iran -->
+  <circle cx="672" cy="248" r="4.5" fill="#D85A30"/><circle cx="672" cy="248" r="8" fill="none" stroke="#D85A30" stroke-width="1" opacity="0.55"/>
+  <!-- N.Korea -->
+  <circle cx="752" cy="212" r="4" fill="#D85A30"/><circle cx="752" cy="212" r="7" fill="none" stroke="#D85A30" stroke-width="1" opacity="0.5"/>
+  <!-- Belarus -->
+  <circle cx="638" cy="192" r="4" fill="#D85A30"/><circle cx="638" cy="192" r="7" fill="none" stroke="#D85A30" stroke-width="1" opacity="0.5"/>
+
+  <!-- Target democracies (teal) -->
+  <!-- USA -->
+  <circle cx="490" cy="240" r="5" fill="#1D9E75"/><circle cx="490" cy="240" r="9" fill="none" stroke="#1D9E75" stroke-width="1.2" opacity="0.55"/>
+  <!-- UK -->
+  <circle cx="598" cy="195" r="4.5" fill="#1D9E75"/><circle cx="598" cy="195" r="8" fill="none" stroke="#1D9E75" stroke-width="1" opacity="0.55"/>
+  <!-- Germany -->
+  <circle cx="618" cy="193" r="4" fill="#1D9E75"/><circle cx="618" cy="193" r="7" fill="none" stroke="#1D9E75" stroke-width="1" opacity="0.5"/>
+  <!-- Ukraine -->
+  <circle cx="643" cy="200" r="4.5" fill="#1D9E75"/><circle cx="643" cy="200" r="8" fill="none" stroke="#1D9E75" stroke-width="1.1" opacity="0.55"/>
+  <!-- Estonia -->
+  <circle cx="628" cy="183" r="3.5" fill="#1D9E75"/><circle cx="628" cy="183" r="6.5" fill="none" stroke="#1D9E75" stroke-width="1" opacity="0.5"/>
+  <!-- Taiwan -->
+  <circle cx="758" cy="237" r="4" fill="#1D9E75"/><circle cx="758" cy="237" r="7" fill="none" stroke="#1D9E75" stroke-width="1" opacity="0.5"/>
+  <!-- Australia -->
+  <circle cx="750" cy="383" r="4.5" fill="#1D9E75"/><circle cx="750" cy="383" r="8" fill="none" stroke="#1D9E75" stroke-width="1.1" opacity="0.55"/>
+  <!-- Canada -->
+  <circle cx="467" cy="212" r="4" fill="#1D9E75"/><circle cx="467" cy="212" r="7" fill="none" stroke="#1D9E75" stroke-width="1" opacity="0.5"/>
+
+  <!-- ── FEED PANEL ── -->
+  <rect x="988" y="108" width="202" height="502" rx="3" fill="#010c1e" fill-opacity="0.9" stroke="#377dd4" stroke-width="1" stroke-opacity="0.42"/>
+  <text x="1000" y="124" fill="rgba(195,242,255,0.95)" font-size="7" letter-spacing="2">SIGNAL FEED</text>
+  <circle cx="1180" cy="120" r="2.5" fill="#1D9E75"/>
+  <!-- Feed tabs -->
+  <rect x="998" y="130" width="88" height="18" rx="2" fill="rgba(0,38,85,0.85)" stroke="#377dd4" stroke-width="0.8" stroke-opacity="0.4"/>
+  <text x="1042" y="143" fill="rgba(215,248,255,0.98)" font-size="7" letter-spacing="1" text-anchor="middle" font-weight="bold">LIVE FEED</text>
+  <rect x="1093" y="130" width="88" height="18" rx="2" fill="rgba(0,16,40,0.7)" stroke="#377dd4" stroke-width="0.8" stroke-opacity="0.32"/>
+  <text x="1137" y="143" fill="rgba(165,220,248,0.72)" font-size="7" letter-spacing="1" text-anchor="middle">WEEKLY LOG</text>
+
+  <!-- Feed entries -->
+  <!-- Entry 1 -->
+  <rect x="998" y="154" width="3" height="48" fill="#5DCAA5"/>
+  <text x="1008" y="166" fill="rgba(175,230,252,0.72)" font-size="7">14:22:31Z · S2</text>
+  <text x="1008" y="178" fill="#d8f0ff" font-size="8" font-weight="600">Russia → USA</text>
+  <text x="1008" y="190" fill="#5DCAA5" font-size="7">Coordinated amplification detected</text>
+  <text x="1008" y="200" fill="rgba(175,242,255,0.78)" font-size="6.5">CONF:HIGH · Disinfo tracking</text>
+  <!-- Entry 2 -->
+  <rect x="998" y="206" width="3" height="48" fill="#378ADD"/>
+  <text x="1008" y="218" fill="rgba(175,230,252,0.72)" font-size="7">14:22:09Z · S3</text>
+  <text x="1008" y="230" fill="#d8f0ff" font-size="8" font-weight="600">China → Taiwan</text>
+  <text x="1008" y="242" fill="#378ADD" font-size="7">Infrastructure cluster mapped</text>
+  <text x="1008" y="252" fill="rgba(175,242,255,0.78)" font-size="6.5">CONF:HIGH · Infrastructure intel</text>
+  <!-- Entry 3 -->
+  <rect x="998" y="258" width="3" height="48" fill="#7F77DD"/>
+  <text x="1008" y="270" fill="rgba(175,230,252,0.72)" font-size="7">14:21:47Z · S5</text>
+  <text x="1008" y="282" fill="#d8f0ff" font-size="8" font-weight="600">Russia → Ukraine</text>
+  <text x="1008" y="294" fill="#7F77DD" font-size="7">Attribution cluster identified</text>
+  <text x="1008" y="304" fill="rgba(175,242,255,0.78)" font-size="6.5">CONF:MED · Actor attribution</text>
+  <!-- Entry 4 -->
+  <rect x="998" y="310" width="3" height="48" fill="#D85A30"/>
+  <text x="1008" y="322" fill="rgba(175,230,252,0.72)" font-size="7">14:21:19Z · S7</text>
+  <text x="1008" y="334" fill="#d8f0ff" font-size="8" font-weight="600">Iran → Germany</text>
+  <text x="1008" y="346" fill="#D85A30" font-size="7">Narrative injection observed</text>
+  <text x="1008" y="356" fill="rgba(175,242,255,0.78)" font-size="6.5">CONF:MED · Narrative pre-bunking</text>
+  <!-- Entry 5 -->
+  <rect x="998" y="362" width="3" height="48" fill="#85B7EB"/>
+  <text x="1008" y="374" fill="rgba(175,230,252,0.72)" font-size="7">14:20:55Z · S4</text>
+  <text x="1008" y="386" fill="#d8f0ff" font-size="8" font-weight="600">China → Australia</text>
+  <text x="1008" y="398" fill="#85B7EB" font-size="7">Financial routing anomaly</text>
+  <text x="1008" y="408" fill="rgba(175,242,255,0.78)" font-size="6.5">CONF:LOW · Financial flow</text>
+  <!-- Entry 6 -->
+  <rect x="998" y="414" width="3" height="48" fill="#AFA9EC"/>
+  <text x="1008" y="426" fill="rgba(175,230,252,0.72)" font-size="7">14:20:31Z · S6</text>
+  <text x="1008" y="438" fill="#d8f0ff" font-size="8" font-weight="600">Belarus → Estonia</text>
+  <text x="1008" y="450" fill="#AFA9EC" font-size="7">Deepfake image circulating</text>
+  <text x="1008" y="460" fill="rgba(175,242,255,0.78)" font-size="6.5">CONF:MED · Visual verification</text>
+  <!-- Entry 7 -->
+  <rect x="998" y="466" width="3" height="48" fill="#1D9E75"/>
+  <text x="1008" y="478" fill="rgba(175,230,252,0.72)" font-size="7">14:20:08Z · S1</text>
+  <text x="1008" y="490" fill="#d8f0ff" font-size="8" font-weight="600">Russia → Canada</text>
+  <text x="1008" y="502" fill="#1D9E75" font-size="7">Bot network activity spike</text>
+  <text x="1008" y="512" fill="rgba(175,242,255,0.78)" font-size="6.5">CONF:HIGH · Social media</text>
+
+  <!-- ── FILTER BAR ── -->
+  <rect x="10" y="540" width="774" height="34" rx="3" fill="#010c1e" fill-opacity="0.9" stroke="#377dd4" stroke-width="1" stroke-opacity="0.42"/>
+  <text x="22" y="561" fill="rgba(185,238,255,0.92)" font-size="7" letter-spacing="1.5">FILTER:</text>
+  <rect x="60" y="548" width="36" height="18" rx="2" fill="rgba(15,50,92,0.72)" stroke="rgba(192,242,255,0.6)" stroke-width="1"/>
+  <text x="78" y="561" fill="rgba(218,252,255,0.95)" font-size="7" text-anchor="middle">All</text>
+  <rect x="104" y="548" width="72" height="18" rx="2" fill="rgba(0,10,25,0.78)" stroke="#1D9E75" stroke-width="1"/>
+  <text x="140" y="561" fill="#5DCAA5" font-size="7" text-anchor="middle">Collection</text>
+  <rect x="184" y="548" width="60" height="18" rx="2" fill="rgba(0,10,25,0.78)" stroke="#378ADD" stroke-width="1"/>
+  <text x="214" y="561" fill="#85B7EB" font-size="7" text-anchor="middle">Analysis</text>
+  <rect x="252" y="548" width="72" height="18" rx="2" fill="rgba(0,10,25,0.78)" stroke="#7F77DD" stroke-width="1"/>
+  <text x="288" y="561" fill="#AFA9EC" font-size="7" text-anchor="middle">Attribution</text>
+  <rect x="332" y="548" width="55" height="18" rx="2" fill="rgba(0,10,25,0.78)" stroke="#D85A30" stroke-width="1"/>
+  <text x="359" y="561" fill="#F09975" font-size="7" text-anchor="middle">Counter</text>
+
+  <!-- ── COORDS ── -->
+  <rect x="792" y="540" width="188" height="34" rx="3" fill="#010c1e" fill-opacity="0.9" stroke="#377dd4" stroke-width="1" stroke-opacity="0.42"/>
+  <text x="802" y="555" fill="rgba(192,242,255,0.9)" font-size="7.5">ROT: 42.3° · 12.1°</text>
+  <text x="802" y="568" fill="rgba(185,238,255,0.55)" font-size="7">Drag to rotate · Filter by phase</text>
+
+  <!-- ── PIPELINE STRIP ── -->
+  <rect x="0" y="582" width="1200" height="2" fill="#377dd4" opacity="0.18"/>
+  <rect x="0" y="584" width="1200" height="136" fill="#010c1e" fill-opacity="0.9" stroke-top="none"/>
+  <rect x="0" y="584" width="1200" height="1" fill="#377dd4" opacity="0.22"/>
+  <!-- Pipeline node strip -->
+  <text x="14" y="600" fill="rgba(175,235,255,0.85)" font-size="7" letter-spacing="2" font-weight="bold">INTEGRATION PIPELINE</text>
+  <!-- Nodes -->
+  <rect x="148" y="589" width="106" height="30" rx="3" fill="rgba(55,138,221,0.16)" stroke="#377dd4" stroke-width="1" stroke-opacity="0.42"/>
+  <text x="156" y="602" fill="#85B7EB" font-size="6.5" font-weight="bold" letter-spacing="1">S3 · Infrastructure</text>
+  <text x="156" y="614" fill="#d8f0ff" font-size="8.5">Shodan</text>
+  <text x="260" y="606" fill="rgba(155,225,252,0.38)" font-size="13">→</text>
+  <rect x="272" y="589" width="148" height="30" rx="3" fill="rgba(55,138,221,0.16)" stroke="#377dd4" stroke-width="1" stroke-opacity="0.42"/>
+  <text x="280" y="602" fill="#85B7EB" font-size="6.5" font-weight="bold" letter-spacing="1">S3+S5 · Enrich</text>
+  <text x="280" y="614" fill="#d8f0ff" font-size="8.5">VirusTotal + DomainTools</text>
+  <text x="426" y="606" fill="rgba(155,225,252,0.38)" font-size="13">→</text>
+  <rect x="438" y="589" width="128" height="30" rx="3" fill="rgba(127,119,221,0.16)" stroke="#7F77DD" stroke-width="1" stroke-opacity="0.42"/>
+  <text x="446" y="602" fill="#AFA9EC" font-size="6.5" font-weight="bold" letter-spacing="1">S5 · Attribution</text>
+  <text x="446" y="614" fill="#d8f0ff" font-size="8.5">MISP + OpenCTI</text>
+  <text x="572" y="606" fill="rgba(155,225,252,0.38)" font-size="13">→</text>
+  <rect x="584" y="589" width="138" height="30" rx="3" fill="rgba(29,158,117,0.16)" stroke="#1D9E75" stroke-width="1" stroke-opacity="0.42"/>
+  <text x="592" y="602" fill="#5DCAA5" font-size="6.5" font-weight="bold" letter-spacing="1">S2 · Narrative</text>
+  <text x="592" y="614" fill="#d8f0ff" font-size="8.5">GDELT + Media Cloud</text>
+  <text x="728" y="606" fill="rgba(155,225,252,0.38)" font-size="13">→</text>
+  <rect x="740" y="589" width="98" height="30" rx="3" fill="rgba(216,90,48,0.16)" stroke="#D85A30" stroke-width="1" stroke-opacity="0.42"/>
+  <text x="748" y="602" fill="#F09975" font-size="6.5" font-weight="bold" letter-spacing="1">S8 · Synthesis</text>
+  <text x="748" y="614" fill="#d8f0ff" font-size="8.5">Claude API</text>
+  <text x="844" y="606" fill="rgba(155,225,252,0.38)" font-size="13">→</text>
+  <rect x="856" y="589" width="118" height="30" rx="3" fill="rgba(216,90,48,0.16)" stroke="#D85A30" stroke-width="1" stroke-opacity="0.42"/>
+  <text x="864" y="602" fill="#F09975" font-size="6.5" font-weight="bold" letter-spacing="1">S7 · Response</text>
+  <text x="864" y="614" fill="#d8f0ff" font-size="8.5">Slack + PagerDuty</text>
+
+  <!-- Pipeline description row -->
+  <rect x="0" y="623" width="1200" height="1" fill="#377dd4" opacity="0.18"/>
+  <text x="14" y="641" fill="rgba(115,195,235,0.72)" font-size="7.5" font-weight="bold" letter-spacing="1">◎ Globe Model</text>
+  <text x="110" y="641" fill="rgba(205,248,255,0.92)" font-size="8">Each arc on the globe represents one full iteration of this six-stage pipeline — triggered by a signal from a source state (coral marker) arriving at a target</text>
+  <text x="110" y="655" fill="rgba(205,248,255,0.92)" font-size="8">democracy (teal marker). Hover any stage above to see how it maps to what you are watching on the globe. The arc colour corresponds to the OSINT strategy</text>
+  <text x="110" y="669" fill="rgba(205,248,255,0.92)" font-size="8">phase active at that moment, and the live feed panel logs each pipeline cycle as it completes.</text>
+
+  <!-- Page label -->
+  <rect x="10" y="694" width="320" height="20" rx="2" fill="rgba(0,15,40,0.6)"/>
+  <text x="20" y="708" fill="rgba(155,215,252,0.55)" font-size="8">Page 1 — Globe Monitor · 20,000-point dot matrix · 18 country markers · 8 OSINT strategy phases</text>
+</svg>
